@@ -8,14 +8,12 @@ class User #création de la classe User
 		@email = email_to_save
 		@age = age_to_update.to_i #integer
 		@@user_all = 1 + @@user_all
-
 	end
 
 	def self.all
 		return [@@user_all]
 	end
 end
-
 
 binding.pry
 puts "end of file"
